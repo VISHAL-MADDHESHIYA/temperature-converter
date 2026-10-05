@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Advanced Temperature Converter using HTML, CSS and JavaScript"
+    >
+
+    <title>Temperature Converter | Vishal Maddheshiya</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo">
+            🌡️ TempConvert
+        </div>
+
+        <button id="themeToggle" class="theme-btn">
+            🌙
+        </button>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <p class="badge">
+                ADVANCED TEMPERATURE CONVERTER
+            </p>
+
+            <h1>
+                Convert Temperature
+                <span>Instantly</span>
+            </h1>
+
+            <p class="subtitle">
+                Convert between Celsius, Fahrenheit and Kelvin
+                with accurate real-time calculations.
+            </p>
+
+        </section>
+
+
+        <!-- Converter Card -->
+        <section class="converter-card">
+
+            <div class="input-section">
+
+                <label for="temperature">
+                    Enter Temperature
+                </label>
+
+                <div class="input-row">
+
+                    <input
+                        type="number"
+                        id="temperature"
+                        placeholder="Enter value"
+                        step="any"
+                        autocomplete="off"
+                    >
+
+                    <select id="unit">
+
+                        <option value="celsius">
+                            Celsius (°C)
+                        </option>
+
+                        <option value="fahrenheit">
+                            Fahrenheit (°F)
+                        </option>
+
+                        <option value="kelvin">
+                            Kelvin (K)
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <p id="errorMessage" class="error-message"></p>
+
+            </div>
+
+
+            <!-- Buttons -->
+            <div class="button-group">
+
+                <button id="convertBtn" class="primary-btn">
+                    Convert
+                </button>
+
+                <button id="clearBtn" class="secondary-btn">
+                    Clear
+                </button>
+
+            </div>
+
+
+            <!-- Results -->
+            <div class="results-section">
+
+                <div class="section-heading">
+                    <h2>Conversion Results</h2>
+
+                    <button id="copyBtn" class="copy-btn">
+                        📋 Copy
+                    </button>
+                </div>
+
+
+                <div class="results-grid">
+
+                    <!-- Celsius -->
+                    <div class="result-card">
+
+                        <div class="result-icon">
+                            °C
+                        </div>
+
+                        <p>Celsius</p>
+
+                        <h3 id="celsiusResult">
+                            --
+                        </h3>
+
+                    </div>
+
+
+                    <!-- Fahrenheit -->
+                    <div class="result-card">
+
+                        <div class="result-icon">
+                            °F
+                        </div>
+
+                        <p>Fahrenheit</p>
+
+                        <h3 id="fahrenheitResult">
+                            --
+                        </h3>
+
+                    </div>
+
+
+                    <!-- Kelvin -->
+                    <div class="result-card">
+
+                        <div class="result-icon">
+                            K
+                        </div>
+
+                        <p>Kelvin</p>
+
+                        <h3 id="kelvinResult">
+                            --
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Conversion Summary -->
+            <div class="summary">
+
+                <h2>Conversion Summary</h2>
+
+                <p id="summaryText">
+                    Enter a temperature to see the conversion.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Formula Section -->
+        <section class="formula-section">
+
+            <h2>Conversion Formulas</h2>
+
+            <div class="formula-grid">
+
+                <div class="formula-card">
+                    <h3>Celsius → Fahrenheit</h3>
+                    <p>F = (C × 9/5) + 32</p>
+                </div>
+
+                <div class="formula-card">
+                    <h3>Celsius → Kelvin</h3>
+                    <p>K = C + 273.15</p>
+                </div>
+
+                <div class="formula-card">
+                    <h3>Fahrenheit → Celsius</h3>
+                    <p>C = (F − 32) × 5/9</p>
+                </div>
+
+                <div class="formula-card">
+                    <h3>Kelvin → Celsius</h3>
+                    <p>C = K − 273.15</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            © 2026 Vishal Maddheshiya · Temperature Converter
+        </p>
+
+        <div class="social-links">
+
+            <a
+                href="https://github.com/VISHAL-MADDHESHIYA"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/vishal-maddheshiya-b2346133b/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                LinkedIn
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
