@@ -6,10 +6,9 @@ The application allows users to convert temperatures between Celsius, Fahrenheit
 
 ---
 
-## 🚀 Live Demo
+## 🌐 Live Demo
 
-🔗 **Live Demo:**  
-https://VISHAL-MADDHESHIYA.github.io/temperature-converter/
+[View Live Demo](https://vishal-maddheshiya.github.io/temperature-converter/)
 
 ---
 
@@ -60,3 +59,10 @@ https://VISHAL-MADDHESHIYA.github.io/temperature-converter/
 
 ```text
 F = (C × 9/5) + 32
+
+## 👨‍💻 Author
+
+**Vishal Maddheshiya**
+
+- GitHub: https://github.com/VISHAL-MADDHESHIYA
+- LinkedIn: https://www.linkedin.com/in/vishal-maddheshiya-b2346133b/
